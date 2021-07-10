@@ -12,7 +12,50 @@
 	</center>
 	
 	<script type="text/javascript">
-		
+		const pessoa = {
+			nome: 'Simara',
+			idade:32,
+			cidade: 'SP'
+		}
+
+		//notação de ponto
+		pessoa.nome;
+		console.log(pessoa.nome)
+
+		//notação de colchetes
+		console.log(pessoa['idade'])
+
+		//como desestruturar objetos
+
+		const {nome,idade,cidade} = pessoa
+
+		console.log(nome)
+		console.log(idade)
+		console.log(cidade)
+
+
+		const filmes= [
+			{
+				id: 1,
+				titulo:"Dilema das redes",
+				descricao: "Um documentário sobre tecnologia",
+				duração:120
+			},
+			{
+				id: 2,
+				titulo:"Us",
+				descricao: "Um filme de terror legal",
+				duração:120
+			},
+			{
+				id: 3,
+				titulo:"Corra",
+				descricao: "Filme de suspense",
+				duração:120
+			}
+		]
+
+		filmes.map(filme => console.log(filme.descricao))
 
 	</script>
 	
